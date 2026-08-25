@@ -431,6 +431,16 @@ body::after {
   text-shadow: none !important;
 }
 
+.base-content > .MuiGrid-container
+  .MuiBox-root:has(> .MuiFormControl-root + .MuiFormControl-root)
+  > .MuiBox-root:first-child
+  > .MuiBox-root:first-child
+  > .MuiBox-root:last-child
+  > .MuiChip-root.MuiChip-filled.MuiChip-colorPrimary
+  > .MuiChip-label {
+  text-shadow: none !important;
+}
+
 .base-content .MuiButtonGroup-root {
   border-radius: 9px !important;
   overflow: hidden;
